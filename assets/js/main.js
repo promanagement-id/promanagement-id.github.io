@@ -122,27 +122,7 @@ function finalVideo2() {
 }
 videoFile2.addEventListener("ended", finalVideo2);
 
-/* Video 3 */
-const videoFile3 = document.getElementById("video-file-3"),
-  videoButton3 = document.getElementById("video-button-3"),
-  videoIcon3 = document.getElementById("video-icon-3");
-function playPause3() {
-  if (videoFile3.paused) {
-    videoFile3.play();
-    videoIcon3.classList.add("ri-pause-line");
-    videoIcon3.classList.remove("ri-play-line");
-  } else {
-    videoFile3.pause();
-    videoIcon3.classList.remove("ri-pause-line");
-    videoIcon3.classList.add("ri-play-line");
-  }
-}
-videoButton3.addEventListener("click", playPause3);
-function finalVideo3() {
-  videoIcon3.classList.remove("ri-pause-line");
-  videoIcon3.classList.add("ri-play-line");
-}
-videoFile2.addEventListener("ended", finalVideo2);
+
 function scrollUp() {
   const scrollUp = document.getElementById("scroll-up");
   if (this.scrollY >= 200) scrollUp.classList.add("show-scroll");
