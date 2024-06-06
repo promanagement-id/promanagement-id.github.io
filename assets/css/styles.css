@@ -1,21 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
   --header-height: 3rem;
-  --hue-color: 95;
-  --first-color: hsl(var(--hue-color) 15%, 15%);
-  --first-color-second: hsl(var(--hue-color), 64%, 22%);
-  --first-color-alt: hsl(var(--hue-color), 64%, 15%);
-  --title-color: hsl(var(--hue-color), 64%, 18%);
-  --text-color: hsl(var(--hue-color), 24%, 35%);
-  --text-color-light: hsl(var(--hue-color), 8%, 60%);
-  --input-color: hsl(var(--hue-color), 24%, 97%);
-  --body-color: hsl(var(--hue-color), 100%, 99%);
+  --hue-color: #2A2925; /* Nilai hue diubah menjadi hex */
+  --first-color: #2A2925; /* Menggunakan warna utama */
+  --first-color-second: #2A2925; /* Menggunakan warna utama */
+  --first-color-alt: #2A2925; /* Menggunakan warna utama */
+  --title-color: #9E9E9E; /* Menggunakan warna utama */
+  --text-color: #9E9E9E; /* Menggunakan warna teks */
+  --text-color-light: #9E9E9E; /* Menggunakan warna teks */
+  --input-color: #9E9E9E; /* Menggunakan warna teks */
+  --body-color: #2A2925; /* Menggunakan warna teks */
   --white-color: #FFF;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
   --body-font: 'Open Sans', sans-serif;
-  --title-font: 'Raleway', sans-serif;
+  --title-font: 'Bebas Neue', sans-serif;
+  --letter-spacing-wide: 0.1rem;
   --biggest-font-size: 2.5rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -178,6 +180,7 @@ input {
 
 .section__title {
   font-size: var(--h2-font-size);
+  letter-spacing: var(--letter-spacing-wide);
   color: var(--title-color);
   text-align: center;
   text-transform: capitalize;
@@ -322,14 +325,14 @@ input {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background-color: var(--first-color-alt);
-  border-radius: 50%;
+  background-color: var(--text-color);
+  border-radius: 10%;
   margin: 0 5px;
   cursor: pointer;
 }
 
 .dot.active {
-  background-color: var(--first-color-second);
+  background-color: #F42F3A;
 }
 
 .home__img.active {
@@ -355,14 +358,15 @@ input {
   font-weight: var(--font-semi-bold);
   margin-top: -45px;
   margin-left: 3px;
-  color: var(--first-color-alt);
+  color: var(--first-color);
 }
 
 .home__data-title {
   font-size: var(--biggest-font-size);
+  letter-spacing: var(--letter-spacing-wide);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-2-5);
-  color: var(--first-color-alt);
+  color: var(--first-color);
 }
 
 .home__social {
@@ -420,8 +424,8 @@ input {
   color: var(--first-color-alt);
   transition: color 0.5s ease;
   border-left: 3px solid var(--first-color);
-  margin-right: 7.2rem;
-  padding-left: 10px; 
+  padding-left: 5px;
+  margin-left: .3rem;
   position: absolute;
   /*bottom: -12px;*/
 }
@@ -446,7 +450,10 @@ input {
 .button {
   display: inline-block;
   background-color: var(--first-color-second);
-  border: 2px solid var(--first-color-alt);
+  border-left: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--text-color);
+  border-right: 1px solid #F42F3A;
+  border-top: 1px solid #F42F3A;
   color: var(--white-color);
   padding: 1rem 2rem;
   font-weight: var(--font-semi-bold);
@@ -466,7 +473,7 @@ input {
 
 .button--link {
   background: none;
-  padding: 0;
+  padding: auto;
 }
 
 .button--link:hover {
