@@ -189,6 +189,7 @@ input {
 
 .section__title-node {
   font-size: var(--h3-font-size);
+  letter-spacing: var(--letter-spacing-wide);
   color: var(--title-color);
   text-align: left;
   text-transform: capitalize;
@@ -450,10 +451,10 @@ input {
 .button {
   display: inline-block;
   background-color: var(--first-color-second);
-  border-left: 1px solid var(--text-color);
-  border-bottom: 1px solid var(--text-color);
-  border-right: 1px solid #F42F3A;
-  border-top: 1px solid #F42F3A;
+  border-left: 2px solid var(--text-color);
+  border-bottom: 2px solid var(--text-color);
+  border-right: 2px solid #F42F3A;
+  border-top: 2px solid #F42F3A;
   color: var(--white-color);
   padding: 1rem 2rem;
   font-weight: var(--font-semi-bold);
@@ -538,6 +539,7 @@ input {
 .discover__title, 
 .discover__description {
   color: var(--white-color);
+  letter-spacing: var(--letter-spacing-wide);
 }
 
 .discover__title {
@@ -749,6 +751,7 @@ input {
 
 .questions__item-title{
   font-size: var(--font-medium);
+  letter-spacing: .8px;
   font-weight: var(--font-medium);
 }
 
@@ -868,6 +871,7 @@ input {
 .footer__title, 
 .footer__subtitle {
   font-size: var(--h3-font-size);
+  letter-spacing: var(--letter-spacing-wide);
 }
 
 .footer__title {
