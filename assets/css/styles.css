@@ -368,6 +368,7 @@ input {
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-2-5);
   color: var(--first-color);
+  
 }
 
 .home__social {
@@ -1213,6 +1214,6 @@ input {
     margin: 0;
   }
   .home__container, .home__img {
-    height: 640px;
+    height: 720px;
   }
 }
