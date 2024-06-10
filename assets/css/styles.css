@@ -533,13 +533,15 @@ input {
 
 .discover__data {
   position: absolute;
+  padding-left: 3px;
+  border-bottom: 1px inset var(--hue-color);
   bottom: 1.5rem;
   left: 1rem;
 }
 
 .discover__title, 
 .discover__description {
-  color: var(--white-color);
+  color: #FFFBF5;
   letter-spacing: var(--letter-spacing-wide);
 }
 
