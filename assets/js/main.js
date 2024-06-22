@@ -17,10 +17,12 @@ function createDots() {
   images.forEach((_, index) => {
     const dot = document.createElement("span");
     dot.classList.add("dot");
+    /* Disable click
     dot.addEventListener("click", () => {
       showImage(index);
       updateActiveDot(index);
     });
+    */
     dotsContainer.appendChild(dot);
   });
 }
