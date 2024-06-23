@@ -322,18 +322,19 @@ input {
   text-align: center;
 }
 
+/* Color manipulation temporary for click */
 .dot {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background-color: var(--text-color);
+  /* background-color: var(--text-color); */
   border-radius: 10%;
   margin: 0 5px;
   cursor: pointer;
 }
 
 .dot.active {
-  background-color: #F42F3A;
+  /* background-color: #F42F3A; */
 }
 
 .home__img.active {
