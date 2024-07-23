@@ -1,25 +1,26 @@
+/* IMPORT FONT */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
   --header-height: 3rem;
-  --hue-color: #2A2925; /* Nilai hue diubah menjadi hex */
-  --first-color: #2A2925; /* Menggunakan warna utama */
-  --first-color-second: #2A2925; /* Menggunakan warna utama */
-  --first-color-alt: #2A2925; /* Menggunakan warna utama */
-  --title-color: #9E9E9E; /* Menggunakan warna utama */
-  --text-color: #9E9E9E; /* Menggunakan warna teks */
-  --text-color-light: #9E9E9E; /* Menggunakan warna teks */
-  --input-color: #9E9E9E; /* Menggunakan warna teks */
-  --body-color: #2A2925; /* Menggunakan warna teks */
+  --hue-color: #2A2925;
+  --first-color: #2A2925;
+  --first-color-second: #2A2925;
+  --first-color-alt: #2A2925; 
+  --title-color: #9E9E9E;
+  --text-color: #9E9E9E; 
+  --text-color-light: #9E9E9E; 
+  --input-color: #9E9E9E; 
+  --body-color: #2A2925; 
   --white-color: #FFF;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
   --body-font: 'Open Sans', sans-serif;
   --price-font: 'Poppins', sans-serif;
   --title-font: 'Bebas Neue', sans-serif;
-  --letter-spacing-wide: 0.1rem;
+  --letter-spacing-wide: .095rem;
   --biggest-font-size: 2.5rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -51,7 +52,7 @@
   --h2-font-size: 1.75rem;
   --h3-font-size: 1.25rem;
   --normal-font-size: 1rem;
-  --small-font-size: .875rem;
+  --small-font-size: .958rem;
   --smaller-font-size: .813rem;
   }
 }
@@ -131,7 +132,7 @@ html {
 
 body {
   margin: var(--header-height) 0 0 0;
-  font-family: var(--body-font);
+  font-family: var(--price-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
@@ -247,7 +248,7 @@ input {
     background-color: var(--body-color);
     top: 0;
     right: -100%;
-    width: 70%;
+    width: 50%;
     height: 100%;
     box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
     padding: 3rem;
@@ -360,6 +361,7 @@ input {
 .home__data-subtitle {
   display: block;
   font-weight: var(--font-semi-bold);
+  font-family: var(--body-font);
   margin-top: -45px;
   margin-left: 3px;
   color: var(--first-color);
@@ -770,7 +772,7 @@ input {
 }
 
 .questions__item-title{
-  font-size: var(--normal-font-size);
+  font-size: 1rem;
   letter-spacing: .3px;
   font-weight: var(--normal-font-size);
 }
@@ -883,6 +885,7 @@ input {
 
 .footer__container {
   row-gap: 5rem;
+  margin-top: 5px;
 }
 
 .footer__content {
